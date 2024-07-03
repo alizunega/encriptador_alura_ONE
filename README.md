@@ -25,14 +25,13 @@ encriptador_alura_ONE
 _En desarrollo_
 
 ## Consideraciones :memo:
-```
-> [!TIP]
 
-> Acepta mayúsculas y minúsculas
-> No acepta simbolos o números
-> Acepta espacios en blanco
-> No acepta caracteres especiales
-```
+> [!TIP]
+>  Acepta mayúsculas y minúsculas
+>  No acepta simbolos o números
+>  No acepta caracteres especiales
+>  Acepta espacios en blanco  
+
 
 ## Construido Con :hammer_and_wrench:
 
