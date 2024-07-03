@@ -6,13 +6,25 @@ Challenge Encriptador para curso Alura ONE
 
 Proyecto: Challenge Encriptador de texto para curso Alura ONE
 
+## Estructura de carpetas :open_file_folder:
+
+├── src
+│   ├── index.html
+|   ├── style.css
+│   └── app.js
+├── assets
+│   ├── fondo_encript.img
+│   └── logo_alura.img
+├── LICENSE
+└── README.md
+
 ## Despliegue :package:
 
 _En desarrollo_
 
 ## Consideraciones :memo:
 
-> [!TIP]
+> [ :bulb: !TIP]
 
 > Acepta mayúsculas y minúsculas
 > No acepta simbolos o números
