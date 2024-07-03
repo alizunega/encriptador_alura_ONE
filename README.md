@@ -7,7 +7,8 @@ Challenge Encriptador para curso Alura ONE
 Proyecto: Challenge Encriptador de texto para curso Alura ONE
 
 ## Estructura de carpetas :open_file_folder:
-
+```
+encriptador_alura_ONE
 ├── src
 │   ├── index.html
 |   ├── style.css
@@ -17,6 +18,7 @@ Proyecto: Challenge Encriptador de texto para curso Alura ONE
 │   └── logo_alura.img
 ├── LICENSE
 └── README.md
+```
 
 ## Despliegue :package:
 
