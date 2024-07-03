@@ -26,7 +26,7 @@ _En desarrollo_
 
 ## Consideraciones :memo:
 
-> [ :bulb: !TIP]
+> [! TIP]
 
 > Acepta mayúsculas y minúsculas
 > No acepta simbolos o números
