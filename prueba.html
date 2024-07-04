@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .input {
+            width: 30em;
+            height: 8em;
+        }
+
+        .output {
+            margin-top: 20%;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .prompt {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input" class="input" placeholder="Escribe tu texto y presiona Enter">
+    <div class="output"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const input = document.getElementById("input");
+            const output = document.querySelector(".output");
+
+            input.addEventListener("keydown", (event) => {
+                if (event.key === "Enter") {
+                    const command = input.value;
+                    const letras = ["a", "e", "i", "o", "u"];
+                    let encript = "";
+
+                    for (let i = 0; i < command.length; i++) {
+                        if (letras.includes(command[i])) {
+                            switch (command[i]) {
+                                case "a":
+                                    encript += "ai";
+                                    break;
+                                case "e":
+                                    encript += "enter";
+                                    break;
+                                case "i":
+                                    encript += "imes";
+                                    break;
+                                case "o":
+                                    encript += "ober";
+                                    break;
+                                case "u":
+                                    encript += "ufat";
+                                    break;
+                            }
+                        } else {
+                            encript += command[i];
+                        }
+                    }
+
+                    output.innerHTML += `<div><span class="prompt">$</span> ${command}</div>`;
+                    input.value = "";
+
+                    const response = `Texto encriptado: ${encript}`;
+                    output.innerHTML += `<div>${response}</div>`;
+
+                    output.scrollTop = output.scrollHeight;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

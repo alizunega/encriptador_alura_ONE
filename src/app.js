@@ -7,10 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const command = input.value;
       const letras = ["a", "e", "i", "o", "u"];
       let encript = "";
-      console.log(command);
-      for (i in command) {
-        console.log(command[i]);
-        console.log(encript);
+
+      for (let i = 0; i < command.length; i++) {
         if (letras.includes(command[i])) {
           switch (command[i]) {
             case "a":
@@ -26,31 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
               encript += "ober";
               break;
             case "u":
-              encritp += "ufat";
+              encript += "ufat";
               break;
           }
-          console.log(command);
         } else {
           encript += command[i];
         }
-        console.log(encript);
       }
 
-      /*
-      La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-       */
-      output.innerHTML += `<div><span class="prompt">$</span> ${encript}</div>`;
+      output.innerHTML += `<div><span class="prompt">$</span> ${command}</div>`;
       input.value = "";
 
-      // Simulate a command response
       const response = `Texto encriptado: ${encript}`;
       output.innerHTML += `<div>${response}</div>`;
 
-      // Scroll to the bottom
       output.scrollTop = output.scrollHeight;
     }
   });
