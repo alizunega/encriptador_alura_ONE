@@ -5,19 +5,29 @@ body {
     color: #cccccc;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header {
+    font-size: 18px;
+    color: black;
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #0fc9f3;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    align-items: center;
 }
 
 .terminal {
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     background-color: #1e1e1e;
     border-radius: 6px;
     padding: 2em;
@@ -59,4 +69,15 @@ button {
     width: 8em;
     height: 2.8em;
     border-radius: .8em;
+}
+
+.footer {
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    bottom: 0;
 }
